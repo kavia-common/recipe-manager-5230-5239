@@ -1,0 +1,367 @@
+.status-bar {
+  height: 44px;
+  width: 100vw;
+  background: transparent;
+}
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 16px 0 16px;
+}
+.home-title-block {
+  display: flex;
+  flex-direction: column;
+}
+.home-title {
+  font-family: var(--typo-68-family);
+  font-size: var(--typo-68-size);
+  font-weight: var(--typo-68-weight);
+  line-height: var(--typo-68-lh);
+  color: var(--typo-68-color);
+  margin-bottom: 2px;
+}
+.home-subtitle {
+  font-family: var(--typo-70-family);
+  font-size: var(--typo-70-size);
+  font-weight: var(--typo-70-weight);
+  line-height: var(--typo-70-lh);
+  color: var(--typo-70-color);
+}
+.home-avatar .avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-ffce80);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.home-search-row {
+  margin: 28px 16px 0 16px;
+  display: flex;
+  gap: 14px;
+}
+.search-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: var(--color-ffffff);
+  border: 1.3px solid var(--color-d9d9d9);
+  border-radius: var(--radius-10);
+  height: 40px;
+  padding: 0 12px;
+}
+.search-icon {
+  width: 18px;
+  height: 18px;
+  background: url('../assets/icons/icon-search.svg') no-repeat center/contain;
+  margin-right: 8px;
+}
+.search-placeholder {
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  color: var(--typo-65-color);
+}
+.filter-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-10);
+  background: var(--color-129575);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-icon {
+  width: 20px;
+  height: 20px;
+  background: url('../assets/icons/icon-settings.svg') no-repeat center/contain;
+}
+.home-categories {
+  margin: 24px 0 0 0;
+  padding-left: 16px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.category-btn {
+  min-width: 54px;
+  height: 31px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-10);
+  border: none;
+  font-family: var(--typo-77-family);
+  font-size: var(--typo-77-size);
+  font-weight: var(--typo-77-weight);
+  color: var(--typo-77-color);
+  padding: 0 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border: 1px solid var(--color-71b1a1);
+}
+.category-btn.active,
+.category-btn:active {
+  background: var(--color-129575);
+  color: var(--color-ffffff);
+  border: none;
+}
+.home-dishes {
+  margin: 30px 0 0 0;
+  overflow-x: auto;
+  padding-left: 16px;
+}
+.dishes-row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.dish-card {
+  width: 150px;
+  min-width: 150px;
+  height: 231px;
+  background: var(--color-ffffff);
+  box-shadow: 0 8px 25px 0 rgba(32,32,32,0.15);
+  border-radius: var(--radius-12);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dish-card-img {
+  position: relative;
+  width: 100%;
+  height: 176px;
+  border-radius: var(--radius-12);
+  overflow: hidden;
+  background: var(--color-d9d9d9);
+}
+.dish-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bookmark-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-12);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookmark-icon {
+  width: 16px;
+  height: 16px;
+  background: url('../assets/icons/icon-bookmark.svg') no-repeat center/contain;
+}
+.dish-card-info {
+  padding: 12px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.dish-card-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+.dish-label {
+  font-family: var(--typo-70-family);
+  font-size: var(--typo-70-size);
+  color: var(--typo-70-color);
+}
+.dish-time {
+  font-family: var(--typo-71-family);
+  font-size: var(--typo-71-size);
+  color: var(--typo-71-color);
+  font-weight: var(--typo-71-weight);
+}
+.dish-card-title {
+  font-family: var(--typo-72-family);
+  font-size: var(--typo-72-size);
+  color: var(--typo-72-color);
+  font-weight: var(--typo-72-weight);
+  text-align: center;
+  width: 100%;
+  margin: 4px 0;
+}
+.dish-card-rating {
+  display: flex;
+  align-items: center;
+  background: var(--color-ffe1b3);
+  border-radius: var(--radius-20);
+  padding: 2px 8px;
+  margin-top: 5px;
+  font-family: var(--typo-73-family);
+  font-size: var(--typo-73-size);
+  color: var(--typo-73-color);
+  gap: 4px;
+  align-self: flex-end;
+}
+.star-icon {
+  width: 14px;
+  height: 14px;
+  background: url('../assets/icons/icon-star.svg') no-repeat center/contain;
+}
+.section-title {
+  font-family: var(--typo-74-family);
+  font-size: var(--typo-74-size);
+  color: var(--typo-74-color);
+  font-weight: var(--typo-74-weight);
+  margin: 30px 16px 0 16px;
+}
+.home-new-recipes {
+  margin: 18px 0 0 0;
+  overflow-x: auto;
+  padding-left: 16px;
+}
+.new-recipes-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.new-recipe-card {
+  width: 251px;
+  min-width: 251px;
+  height: 127px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-10);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.07);
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
+.new-recipe-img img {
+  width: 79px;
+  height: 86px;
+  border-radius: var(--radius-12);
+  object-fit: cover;
+}
+.new-recipe-info {
+  flex: 1;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.new-recipe-title {
+  font-family: var(--typo-75-family);
+  font-size: var(--typo-75-size);
+  color: var(--typo-75-color);
+  font-weight: var(--typo-75-weight);
+}
+.new-recipe-details {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--typo-70-family);
+  font-size: var(--typo-70-size);
+}
+.timer-icon {
+  width: 16px;
+  height: 16px;
+  background: url('../assets/icons/icon-timer.svg') no-repeat center/contain;
+}
+.rating-value {
+  font-family: var(--typo-73-family);
+  font-size: var(--typo-73-size);
+  color: var(--typo-73-color);
+}
+.avatar-small img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 7px;
+}
+.creator-label {
+  font-family: var(--typo-70-family);
+  font-size: var(--typo-70-size);
+  color: var(--typo-70-color);
+  margin-left: 2px;
+}
+.home-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+.nav-bar {
+  width: 375px;
+  height: 120px;
+  background: var(--color-ffffff);
+  box-shadow: 0 0 8px 0 rgba(108,108,108,0.09);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 24px 16px 24px;
+  border-radius: var(--radius-30) var(--radius-30) 0 0;
+  pointer-events: auto;
+  z-index: 40;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-btn.home.active span {
+  background: url('../assets/icons/icon-home-active.svg') no-repeat center/contain;
+}
+.nav-btn span.icon {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+.nav-btn.nav-plus {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-129575);
+  box-shadow: 0 4px 24px 0 rgba(32,32,32,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 41;
+}
+.home-indicator {
+  margin: 12px auto 0 auto;
+  width: 135px;
+  height: 5px;
+  background: var(--color-121212, #121212);
+  border-radius: 100px;
+  opacity: 0.4;
+}
+@media (max-width: 400px) {
+  .nav-bar { width: 100vw; }
+}
